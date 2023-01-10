@@ -1,21 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>TV - Data Base</title>
-		<meta
-			name="og:description"
-			content="Search For All Your Favorite TV Shows"
-		/>
-	
-		<meta property="og:title" content="Television Data Base" />
-		<meta property="og:type" content="">
-		<meta property="og:url" content="">
-
-		<meta property="og:image" content="[image]"  />
-		<meta property="og:image:type" content="[image]" />
-		<link rel="shortcut icon" type="image/jpg" href="images/favicon.svg" />
-
-		<link rel='stylesheet' href='css/style.css'>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<script src="script.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV - Data Base</title>
+    <meta name="og:description" content="Search For All Your Favorite TV Shows" />
+    <meta property="og:title" content="Television Data Base" />
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="[image]" />
+    <meta property="og:image:type" content="[image]" />
+    <link rel="shortcut icon" type="image/jpg" href=" 	images/favicon.svg" />
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
 </head>
+
+<body>
+    <header>
+        <inner-column>
+            <masthead>
+                <div class="mobile">
+                    <a href="#">
+                        <picture class='logo'>
+                            <img src="images/tv-db-seeklogo.com.svg" alt="">
+                        </picture>
+                    </a>
+
+                    <div class="icons">
+                    	<i class="fa-solid fa-magnifying-glass search-dd"></i>
+                    	<i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                </div>
+                
+            </masthead>
+
+            <nav-bar class="nav-search slide-out">
+                    <nav-links class="body-copy">
+                        <a href="">Home</a>
+                        <a href="">Discover</a>
+                        <a href="">Support</a>
+                    </nav-links>
+                    <nav-inputs>
+                        <form id="search-form" action="">
+                            <input id="search-input" type="text" placeholder="Search TVdb" name="query" class="body-copy">
+                        </form>
+                            <i class="fa-regular fa-circle-xmark close-search"></i>
+
+                        <div class="login">
+                            <i class="fa-regular fa-circle-user"></i>
+                            <a href="" class="body-copy">Login</a>
+                        </div>
+                    </nav-inputs>
+                </nav-bar>
+        </inner-column>
+    </header>
+    <section class="landing-container">
+        <inner-column>
+            <section class="landing">
+                <picture class='logo'>
+                    <img src="images/tv-db-seeklogo.com.svg" alt="">
+                </picture>
+                <h2 class="fourth-level-heading">Television Data Base</h2>
+                <section>
+                    <h4 class="body-copy"> Welcome </h4>
+                    <p class="quiet-voice">
+                        This TVdb website is a project I made that basically mimics and copiesthe <span><a href="https://thetvdb.com/">TheTVDB</a></span> website. All copyrights belong to the original owner and this project is not meant to capitilize on TheTVDB. Rather, this is a project I created to practice using APIs. This website is built using <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>, and the <span><a href="https://www.tvmaze.com/api">TV Maze</a> API</span>.
+                    </p>
+                </section>
+                <section>
+                    <h4 class="body-copy"> What is TVdb</h4>
+                    <p class="quiet-voice">
+                        You've found the most accurate source for TV and film. Our information comes from fans like you, so create a free account and help your favorite shows and movies. Everything added is shared with many other sites, mobile apps, and devices.
+                    </p>
+                </section>
+            </section>
+        </inner-column>
+    </section>
+    <section class="show-grid">
+        <inner-column>
+            <h2 class="fourth-level-heading" id="search-feedback"></h2>
+            <section class="show-grid-container">
+                <ul class="results-ul">
+                </ul>
+            </section>
+        </inner-column>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</body>
+
+</html>
