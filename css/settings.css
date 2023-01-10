@@ -1,28 +1,14 @@
 body {
     --black: #111111;
+    --primary:  #79c142;
     --white: #FFFFFF;
+    --marker:  #79c142;
 
-    --color: #6D40F4;
-    --color: #494141;
-    --foreground: #233742;
+    --pen:  #e9ecef;
+    --stencil:  #565c67;
+    --bg-main:  #020916;
+    --bg-secondary:  #0f1622;
 
-    --gray: #F2F2F2;
-    --alternate: #2D4881;
-
-    --html: #E39600;
-    --css: #264de4;
-    --php: #8F48EB;
-    --js: #d6be00;
-
-    --background:  rgb(34,52,70);
-    --text:  #fff;
-    --terms: #8e8e8e;
-    --button:  #72c024;
-    --accent:  #5aae45;
-    --accent:  #c96727;
-
-    --error:  #d21224;
-    --pass:  #76AF3D;
 
 }
 
