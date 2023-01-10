@@ -22,7 +22,14 @@
 /* COMPONENTS */
 @import 'components.css';
 
+body {
+    background-color: var(--bg-main);
+    color: var(--pen);
+}
 
+header {
+    background-color: var(--bg-secondary);
+}
 
 
 /* SITE SECTIONS */
