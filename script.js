@@ -54,8 +54,6 @@ form.addEventListener('submit', async (e) => {
     let li = '',
         premiered = '',
         img = '';
-
-
         for (let show of results) {
 
             const name = show.show.name,
@@ -94,9 +92,6 @@ form.addEventListener('submit', async (e) => {
     input.value = '';
 
 });
-
-
-
 
 const getTvShows = async (e) => {
     const userSearch = form.elements.query.value.trim();
