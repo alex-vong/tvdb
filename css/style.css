@@ -55,6 +55,8 @@ masthead .mobile .icons {
     gap: 10px;
 }
 
+
+
 nav-bar {
     /*display: none;*/
     flex-direction: row;
@@ -126,6 +128,7 @@ input[type=text] {
     padding: 10px 20px;
     background-color: var(--bg-main);
     border: none;
+    caret-color: var(--primary);
 }
 
 input::placeholder {
