@@ -13,7 +13,6 @@ console.log(closeSearch);
 
 dropDown.addEventListener('click', () => {
     console.log(navSearch.classList);
-    // navSearch.style.zIndex = '0';
     navSearch.classList.remove('slide-out');
     navSearch.classList.add('slide-in');
     navSearch.style.zIndex = '-1000';
@@ -74,7 +73,7 @@ form.addEventListener('submit', async (e) => {
 
             li += `<li>
 			       <picture>
-			       	  <img src="${img}" alt="" loading="lazy">
+			       	  <img src="${img}" alt="show poster for ${name}" loading="lazy">
 			       </picture>
 
 			       <h2>${name}</h2>
